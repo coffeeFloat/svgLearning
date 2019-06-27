@@ -8,6 +8,39 @@
     </style>
 </head>
 <body>
+    <!--绘制矩形-->
+    <svg width="200px" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <!--大写指定明确坐标-->
+        <path d="M10 10 H 90 V 90 H 10 L 10 10"></path>
+
+        <!--小写相对于之前坐标，移动的距离-->
+        <path d="M10 110 h 80 v 80 h -80 Z"></path>
+
+        <!--L line to-->
+        <path d="M 110 110 L 200 110 L 200 200 L 110 200 Z"></path>
+    </svg>
+
+    <!--三次贝塞尔曲线-->
+    <!--C-->
+    <svg width="190px" height="160px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 10 C 20 20, 40 20, 50 10" stroke="black" fill="transparent"></path>
+    </svg>
+    <!--S-->
+    <svg width="190px" height="160px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" stroke="black" fill="transparent"></path>
+    </svg>
+
+    <!--二次贝塞尔曲线-->
+    <!--Q 控制点 终点-->
+    <svg width="190px" height="160px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 80 Q 95 10 180 80" stroke="black" fill="transparent"></path>
+    </svg>
+    <!--T-->
+    <svg width="190px" height="160px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 80 Q 52.5 10, 95 80 T 180 80" stroke="black" fill="transparent"></path>
+    </svg>
+
+    <!--弧形-->
 
 </body>
 </html>
