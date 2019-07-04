@@ -21,21 +21,21 @@
     </svg>
 
     <!--三次贝塞尔曲线-->
-    <!--C-->
+    <!--C 起点控制点 终点控制点 终点-->
     <svg width="190px" height="160px" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <path d="M10 10 C 20 20, 40 20, 50 10" stroke="black" fill="transparent"></path>
     </svg>
-    <!--S-->
+    <!--S 跟在 C S 命令之后，终点控制点 终点 （起点控制点为上一个命令终点控制点的对称点）-->
     <svg width="190px" height="160px" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" stroke="black" fill="transparent"></path>
     </svg>
 
     <!--二次贝塞尔曲线-->
-    <!--Q 控制点 终点-->
+    <!--Q 控制点 终点 （一个控制点决定起点、终点的曲线斜率）-->
     <svg width="190px" height="160px" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <path d="M10 80 Q 95 10 180 80" stroke="black" fill="transparent"></path>
     </svg>
-    <!--T-->
+    <!--T 跟在 Q T 命令之后，只一个终点。（前一个命令控制点的对称点即为该曲线的控制点）-->
     <svg width="190px" height="160px" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <path d="M10 80 Q 52.5 10, 95 80 T 180 80" stroke="black" fill="transparent"></path>
     </svg>
