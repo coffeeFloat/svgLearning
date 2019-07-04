@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图案</title>
+</head>
+<body>
+<svg width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="pattern1" x="0" y="0" width="0.25" height="0.25">
+            <rect x="0" y="0" width="50" height="50" fill="skyblue"></rect>
+            <rect x="0" y="0" width="25" height="25" fill="red"></rect>
+        </pattern>
+
+    </defs>
+    <rect x="0" y="0" width="200" height="200" stroke="black" fill="url(#pattern1)"></rect>
+</svg>
+
+<!--patternContentUnits="objectBoundingBox"-->
+<svg width="200" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="pattern2" x="0" y="0" width="0.25" height="0.25">
+            <rect x="0" y="0" width="3" height="3" fill="skyblue"></rect>
+            <rect x="0" y="0" width="2" height="2" fill="red"></rect>
+        </pattern>
+
+    </defs>
+    <rect x="0" y="0" width="200" height="300" stroke="black" fill="url(#pattern2)"></rect>
+</svg>
+<svg width="200" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="pattern3" x="0" y="0" width="0.25" height="0.25" patternContentUnits="objectBoundingBox">
+            <rect x="0" y="0" width="0.25" height="0.25" fill="skyblue"></rect>
+            <rect x="0" y="0" width=".125" height=".125" fill="red"></rect>
+        </pattern>
+
+    </defs>
+    <rect x="0" y="0" width="200" height="300" stroke="black" fill="url(#pattern3)"></rect>
+</svg>
+
+<!--patternUnits="userSpaceOnUse"-->
+<svg width="200" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="pattern4" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="50" height="50" fill="skyblue"></rect>
+            <rect x="0" y="0" width="25" height="25" fill="red"></rect>
+        </pattern>
+
+    </defs>
+    <rect x="0" y="0" width="200" height="300" stroke="black" fill="url(#pattern4)"></rect>
+</svg>
+</body>
+</html>
