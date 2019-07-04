@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>填充和边框</title>
+</head>
+<body>
+    <!--控制填充以及描边不透明度-->
+    <svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <rect x="10" y="10" width="50" height="50" stroke="blue" stroke-width="3" fill="red" stroke-opacity="0.2" fill-opacity="0.5"></rect>
+    </svg>
+    <!--控制线段两端样式-->
+    <!--butt 屁股   square 方形    round 圆角-->
+    <svg width="160px" height="120px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <line x1="40" x2="120" y1="20" y2="20" stroke="black" t stroke-width="20" stroke-linecap="butt"></line>
+        <line x1="40" x2="120" y1="60" y2="60" stroke="black" stroke-width="20" stroke-linecap="square"></line>
+        <line x1="40" x2="120" y1="100" y2="100" stroke="black" stroke-width="20" stroke-linecap="round"></line>
+    </svg>
+    <!--控制线段连接方式-->
+    <!--miter 斜切   bevel 斜角    round 圆-->
+    <svg width="160" height="280" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <polyline points="40 60 80 20 120 60" stroke="blue" stroke-width="20" stroke-linecap="butt" stroke-linejoin="miter" fill="none"></polyline>
+        <polyline points="40 140 80 100 120 140" stroke="blue" stroke-width="20" stroke-linecap="square" stroke-linejoin="bevel" fill="none"></polyline>
+        <polyline points="40 220 80 180 120 220" stroke="blue" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none"></polyline>
+    </svg>
+</body>
+</html>
