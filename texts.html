@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本</title>
+</head>
+<body>
+    <svg width="800" height="800" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <!--text-anchor： start middle end 文本在该点开始、中点、结束-->
+        <text x="50" y="30" text-anchor="start">hello world</text>
+        <text x="50" y="80" text-anchor="middle">hello world</text>
+        <text x="50" y="130" text-anchor="end" fill="blue">hello world</text>
+        <text x="50" y="180" font-weight="bold" font-size="24" >哈哈哈哈</text>
+
+        <text x="50" y="230" fill="orange">
+            <tspan dx="1,2,3,4,5,6,7,8,9,10">1234567890</tspan>
+
+        </text>
+        <text x="50" y="280">
+            <tspan dx="60,60,60,60,60" rotate="30,60,90,-45,-75">今儿真热啊</tspan>
+        </text>
+
+        <text id="example" x="50" y="330">这是一个例子</text>
+        <text >
+            <tref xlink:href="#example"></tref>
+        </text>
+        <path id="textPath" d="M 50 360 C 80 320 120 320 150 360 S 220 390 250 360" fill="none" stroke="orange" />
+        <text>
+            <textPath xlink:href="#textPath">我要沿着路径走!!! 哈哈哈哈</textPath>
+        </text>
+    </svg>
+</body>
+</html>
