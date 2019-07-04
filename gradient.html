@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>线性渐变、径向渐变</title>
+</head>
+<body>
+    <!--线性渐变-->
+    <svg width="120" height="240" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <!--线性渐变定义-->
+            <linearGradient id="linear1">
+                <stop class="stop1" offset="0%"></stop>
+                <stop stop-color="yellow" stop-opacity="0.3" offset="50%"></stop>
+                <stop class="stop3" offset="100%"></stop>
+            </linearGradient>
+            <linearGradient id="linear2" x1="0" x2="0" y1="0" y2="0.5">
+                <stop class="stop1" offset="0%"></stop>
+                <stop stop-color="yellow" stop-opacity="0.3" offset="50%"></stop>
+                <stop class="stop3" offset="100%"></stop>
+            </linearGradient>
+            <style>
+                .stop1 {
+                    stop-opacity: 1;
+                    stop-color: orange;
+                }
+                .stop3 {
+                    stop-opacity: 0.8;
+                    stop-color: green;
+                }
+                #rect1 {
+                    fill: url(#linear1);
+                }
+             </style>
+        </defs>
+
+        <rect x="10" y="10" rx="10" ry="10" width="100" height="100" id="rect1"></rect>
+        <rect x="10" y="120" rx="10" ry="10" width="100" height="100" fill="url(#linear2)"></rect>
+    </svg>
+
+    <!--径向渐变-->
+    <svg width="120" height="240" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <!--默认人情况下 渐变占满整个区域 并以区域中心为起点向边缘扩散-->
+            <radialGradient id="radial1">
+                <stop stop-color="yellow" offset="0%"></stop>
+                <stop stop-color="orange" offset="100%"></stop>
+            </radialGradient>
+            <radialGradient id="radial2" cx="0.5" cy="0.5" r="0.5">
+                <stop stop-color="yellow" offset="0%"></stop>
+                <stop stop-color="orange" offset="100%"></stop>
+            </radialGradient>
+        </defs>
+        <rect x="10" y="10" width="100" height="100" fill="url(#radial1)" rx="10" ry="10"></rect>
+        <rect x="10" y="120" width="100" height="100" fill="url(#radial2)" rx="10" ry="10"></rect>
+    </svg>
+
+    <svg width="120" height="120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <radialGradient id="radial3" cx="0.6" cy="0.6" r="0.4" fx="0.4" fy="0.4">
+                <stop stop-color="blue" offset="0%"> </stop>
+                <stop stop-color="grey" offset="100%"></stop>
+            </radialGradient>
+        </defs>
+        <rect x="10" y="10" width="100" height="100" fill="url(#radial3)" rx="10" ry="10"></rect>
+    </svg>
+</body>
+</html>
